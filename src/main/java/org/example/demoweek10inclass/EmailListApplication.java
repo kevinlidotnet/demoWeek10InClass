@@ -10,8 +10,8 @@ import java.io.IOException;
 public class EmailListApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(EmailListApplication.class.getResource("emailList-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        FXMLLoader fxmlLoader = new FXMLLoader(EmailListApplication.class.getResource("contactList-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 500);
         stage.setTitle("Hello Week10!");
         stage.setScene(scene);
         stage.show();

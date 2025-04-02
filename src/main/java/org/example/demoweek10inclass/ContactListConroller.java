@@ -1,5 +1,8 @@
 package org.example.demoweek10inclass;
 
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
+import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -25,6 +28,8 @@ public class ContactListConroller implements Initializable {
     @FXML
     private TextField keyword;
 
+    private ObservableList<String> list    ;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         //Get all the emails and show them in the contact listview
@@ -38,6 +43,10 @@ public class ContactListConroller implements Initializable {
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
+        list = contactListView.getItems();
+        list.addListener((InvalidationListener) observable -> {
+            System.out.println(list.size());
+        });
 
         //To show the total number of the contacts
         totalContacts.setText(String.valueOf(contactListView.getItems().stream().count()));

@@ -40,4 +40,9 @@ public class Contact {
     public void setEmail(String email) {
         Email = email;
     }
+
+    @Override
+    public String toString(){
+        return firstName + " " + lastName + " " + Email;
+    }
 }

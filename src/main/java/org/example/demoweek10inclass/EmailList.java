@@ -1,5 +1,7 @@
 package org.example.demoweek10inclass;
 
+import jdk.dynalink.beans.StaticClass;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -47,4 +49,26 @@ public class EmailList {
         }
         return Emails;
     }
+
+    static ArrayList<Contact> getAllContacts() throws FileNotFoundException {
+        ArrayList<Contact> Emails= new ArrayList<>();
+        try(Scanner in = new Scanner(new File("src/main/resources/org/example/demoweek10inclass/contacts.csv"));)
+        {
+            while(in.hasNext()){
+                String contact = in.nextLine();
+                if (contact.contains("@")) {
+                    Contact c = new Contact(contact.substring(0, contact.indexOf(",")),
+                            contact.substring(contact.indexOf(",") + 1,contact.lastIndexOf(",")),
+                            contact.substring(contact.lastIndexOf(",") + 1));
+                    Emails.add( c);
+                }
+
+            }
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return Emails;
+    }
+
 }

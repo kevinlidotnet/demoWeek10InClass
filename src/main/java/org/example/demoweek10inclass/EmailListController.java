@@ -1,5 +1,7 @@
 package org.example.demoweek10inclass;
 
+import javafx.beans.Observable;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -14,6 +16,7 @@ public class EmailListController {
     private Label welcomeText;
     @FXML
     private Label titleText;
+
 
     @FXML
     protected void onHelloButtonClick() throws FileNotFoundException {

@@ -51,7 +51,7 @@ public class EmailList {
     }
 
     static ArrayList<Contact> getAllContacts() throws FileNotFoundException {
-        ArrayList<Contact> Emails= new ArrayList<>();
+        ArrayList<Contact> contacts= new ArrayList<>();
         try(Scanner in = new Scanner(new File("src/main/resources/org/example/demoweek10inclass/contacts.csv"));)
         {
             while(in.hasNext()){
@@ -60,7 +60,7 @@ public class EmailList {
                     Contact c = new Contact(contact.substring(0, contact.indexOf(",")),
                             contact.substring(contact.indexOf(",") + 1,contact.lastIndexOf(",")),
                             contact.substring(contact.lastIndexOf(",") + 1));
-                    Emails.add( c);
+                    contacts.add( c);
                 }
 
             }
@@ -68,7 +68,7 @@ public class EmailList {
         catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        return Emails;
+        return contacts;
     }
 
 }

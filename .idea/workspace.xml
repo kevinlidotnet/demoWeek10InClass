@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc1f8901-be50-47ec-b550-4b59574d3a43" name="Changes" comment="Added the 2nd view with the filter button">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/FilteredContactsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/demoweek10inclass/filteredContacts-view.fxml" afterDir="false" />
+    <list default="true" id="dc1f8901-be50-47ec-b550-4b59574d3a43" name="Changes" comment="Added a refresh button to get read the file if updated.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/SearchContactsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/demoweek10inclass/searchContacts-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/ContactListConroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/ContactListConroller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/EmailList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/EmailList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/EmailListApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/EmailListApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/EmailListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/EmailListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/demoweek10inclass/contacts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/demoweek10inclass/contacts.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +98,7 @@
       <updated>1742422560979</updated>
       <workItem from="1742422562194" duration="4942000" />
       <workItem from="1742699200413" duration="9788000" />
-      <workItem from="1743480042142" duration="10577000" />
+      <workItem from="1743480042142" duration="15853000" />
     </task>
     <task id="LOCAL-00001" summary="Added event handlers,showing first email.">
       <option name="closed" value="true" />
@@ -119,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742788806167</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added the 2nd view with the filter button">
+      <option name="closed" value="true" />
+      <created>1743632922421</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743632922421</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +150,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added event handlers,showing first email." />
     <MESSAGE value="Added the 2nd view with the filter button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the 2nd view with the filter button" />
+    <MESSAGE value="Added a refresh button to get read the file if updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a refresh button to get read the file if updated." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -154,6 +160,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/EmailList.java</url>
           <line>17</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/demoweek10inclass/EmailListApplication.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

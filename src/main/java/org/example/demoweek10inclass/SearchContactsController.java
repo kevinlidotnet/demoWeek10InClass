@@ -41,7 +41,7 @@ public class SearchContactsController implements Initializable {
         System.out.println("Initializing SearchContactsController");
         //Get all contacts into contacts
         try {
-            contacts.addAll(EmailList.getAllContacts());
+            contacts = FXCollections.observableArrayList(EmailList.getAllContacts());
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
